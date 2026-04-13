@@ -1,0 +1,209 @@
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #6c63ff;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --gray: #94a3b8;
+}
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #050247, #4f46e5);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.myimage{
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+
+.hero p {
+  color: #e2e8f0;
+  
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.primary {
+  background: white;
+  color: #111;
+}
+
+.outline {
+  border: 2px solid white;
+  color: white;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+/* DARK SECTION */
+.dark {
+  background: #f1f5f9;
+}
+
+/* ===== ABOUT BOX ===== */
+.about-box {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+/* ===== CONTACT ===== */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--dark);
+  color: white;
+}
+
+.webimage{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}
